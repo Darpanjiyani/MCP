@@ -4,7 +4,7 @@ from fastmcp import FastMCP
 mcp = FastMCP()
 
 @mcp.tool()
-def fetch():
+def fetch_http():
     '''Use this tool to Fetch data from a source.'''
 
     # Simulate fetching data from a source
@@ -12,7 +12,7 @@ def fetch():
     return {"data": "Hello, World!"}
 
 @mcp.tool()
-def process():
+def process_http():
     '''Use this tool to Process the fetched data.'''
 
     # Simulate processing the data
